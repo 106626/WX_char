@@ -1,0 +1,82 @@
+page{
+	font-family:"Microsoft YaHei"; 
+	background-color: #fff;
+	display: flex; 
+	/*设置纵向排列*/
+	flex-direction: column;
+	
+}
+.page-header{
+	display: flex;
+	/*横向居中对齐*/
+	justify-content:center;
+	/**下边框*/
+	border-bottom:2rpx solid #ccc;
+	margin-bottom:10rpx; 
+}
+.page-header-text{
+	padding: 20rpx 40rpx;
+	color: #999;
+	font-size: 40rpx;
+	text-align:center;
+}
+/*全局的*/
+.page-body{
+	display: flex;
+	flex:1;/*将剩余的空间占满*/
+	flex-direction: column;/*排列方向为纵向*/
+
+}
+/*容器的样式*/
+.item{
+	display: flex;
+	padding: 20rpx 40rpx;
+	border-bottom: 2 rpx  solid #eee;
+}
+/*容器中的图片样式*/
+.item .poster{
+width:128rpx;
+height: 128rpx;
+margin-right:20rpx;
+}
+/*文本*/
+.item .meta{
+	flex:1;
+}
+/*小标题 导演*/
+.item .title,.item .sub-title{
+	display: block; /*换行*/
+	margin-bottom: 14rpx;
+}
+.item .title{
+	font-size: 32rpx;
+}
+.item .sub-title{
+	font-size: 22rpx;
+	color: #c0c0c0; 
+} 
+/*导演大小*/
+.item .artists{
+   font-size: 26rpx;
+   color: #999;
+}
+/*评分大小*/
+.item .rating{
+	font-size: 28rpx;
+	font-weight: bold;/*字体粗细：粗体*/
+	color: #FF0033;
+}
+.music_page{
+	display: flex;
+
+flex-direction: row;
+	margin-top: 50rpx;
+	margin-bottom: 20rpx;
+}
+.music_logo{
+   justify-content:center;
+   height:80rpx;
+   width :80rpx;
+   margin-left:30rpx;
+
+}

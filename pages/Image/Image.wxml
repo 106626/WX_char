@@ -1,0 +1,24 @@
+<view class="add_box">
+	<view class="left_box">
+	<image class="add_select" src="../Images/4.png" bindtap="upLoadImg" ></image>
+    </view>
+    <view class="right_box">
+    	<image class="add_image" src="{{imgSrc}}">
+    	</image>
+    </view>
+    
+</view>
+<button class="Login" type="default" from-type="submit" disabled="{{on}}" bindtap="UP_photo">
+			上传照片
+		</button>
+        <!--按钮-->
+		<view class="body-view">
+    <switch  bindchange="switch1Change"/>
+  </view>
+ 
+  <button class="input_"  catchtouchstart="recordStart" catchtouchend="recordEnd">
+  <input class="vidio" value="按住说话" disabled="disabled">
+  </input>
+</button>
+
+ 

@@ -1,0 +1,28 @@
+<view class="page-header">
+    
+    <text class="page-header-text">{{title}}
+    </text>
+</view>
+
+
+<scroll-view class="page-body" scrool-y="true">
+             <!--问号前面是路径，加id是为了给movie传递值 一个电影一个id-->
+   <navigator url="../movie/movie?id={{item.id}}" wx:for="{{movies}}" wx:key="unique">
+      <view  class="item">
+      	<!--获取到图片 for循环-->
+      	<image class="poster"  src="{{item.images.small}}"> </image>
+      	<view class="meta">
+      		 <!--图片下面的文字  title-->
+      		  <text class="title">{{item.title}}</text> <!--图片小标题  original_title--> <text class="sub-title">{{item.original_title}}({{item.year}})</text><!--导演 directors --><text class="artists"> <text wx:for="{{item.directors}}" wx:key="unique">{{item.name}}</text></text>
+      	</view>
+
+        <view calss="rating">
+       	<!--电影分数-->
+       	<text>{{item.rating.average}}</text>
+         </view>
+
+
+
+      </view>
+   </navigator>
+	</scroll-view>

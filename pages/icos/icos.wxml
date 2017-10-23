@@ -1,0 +1,43 @@
+
+<swiper indicator-dots="true" circular="true" autoplay="true" interval="3000">
+		<swiper-item><image  src="../Images/wx.png" ></image></swiper-item>
+		<swiper-item><image  src="../Images/vr.png" ></image> </swiper-item>
+		<swiper-item><image  src="../Images/aiqiyi.png"></image></swiper-item>
+	</swiper>	
+	<view class="_naozhong_page">
+	
+<text class="txt">
+	小微提醒：Muster 要早睡早起噢^~^
+</text>
+
+
+<vire class="_ViewData">
+	
+	<view class="View_picker">
+	<picker   mode="date" value="{{date}}" start="{{_times}}" bindchange="bindDateChange">
+       
+		设置闹钟日期： {{_times}} 
+        
+	</picker>
+   </view>
+    
+	<text class="View_text">{{changeData}}</text>
+
+</vire>
+
+<view class="_ViewTime">
+	
+<picker mode="time"  class="Time_picker" value="{{times}}" start='00:00' bindchange="bindTimeChange">
+   设置闹钟时间：
+	</picker>
+
+
+<text class="Time_text">{{times}}</text>
+
+</view>
+
+</view>
+
+
+<button class="Time" type="primary" size="default" bindtap="_addTime" hover-class="true">确认</button>
+

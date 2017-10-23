@@ -1,0 +1,39 @@
+{
+  "pages":[
+"pages/index/index",
+    "pages/Image/Image",
+   
+    "pages/icos/icos",
+    "pages/index_movie/index_movie",
+    "pages/movie/movie",
+    "pages/search/search"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#b3d4db",
+    "navigationBarTitleText": "私人管家",
+    "navigationBarTextStyle":"black"
+  }
+  ,
+  "tabBar": {
+      "color":"#ccc",
+      "selectedColor": "black",
+    "list": [{
+      "pagePath": "pages/Image/Image",
+      "text": "安全中心",
+      "iconPath": "pages/Images/1.png",
+       "selectedIconPath": "pages/Images/1.png"
+    },{
+      "pagePath": "pages/icos/icos",
+      "text": "闹铃",
+      "iconPath": "pages/Images/2.png",
+      "selectedIconPath": "pages/Images/2.png"
+    }
+    
+   ]
+  }
+  
+
+  
+  
+}
